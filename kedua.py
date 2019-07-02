@@ -23,9 +23,23 @@
 
 # print(mydoubler(3))
 
-a = int(input("Input Perkalian:"))
 
-for b in range(1,11):
+# a = int(input("konversi F to C = "))
 
-  print("{} x {} = {}". format(b,a,b*a))
+# hasil=(a - 32)*(5/9)
+# print(float(hasil))
 
+
+total = 1000
+# Variabel global 
+# Definisi fungsi 
+def sum( arg1, arg2 ): 
+    """Menambahkan variabel dan mengembalikan hasilnya."""
+    total = arg1 + arg2; 
+    # total di sini adalah variabel lokal 
+    print ("Di dalam fungsi nilai total : ", total) 
+    return total 
+
+# Pemanggilan fungsi sum 
+sum( 10, 20 ) 
+print ("Di luar fungsi, nilai total : ", total ) 

@@ -43,5 +43,17 @@ for b in range(1,11):
   print("{} x {} = {}". format(b,a,b*a))
 
 
+#Soal 3
+# membuat aplikasi konversi celcius dan farenhiet
+# jawaban soal 3
+a = input("Silahkan Pilih Input F to C = ")
 
+if "F" in a:
+  x=int(input("Silahkan Input Suhu Fahrenheit = "))
+  hasilF=(x - 32)*(5/9)
+  print(float(hasilF), "C")
+elif "C" in a:
+  y=int(input("Silahkan Input Suhu Celcius = "))
+  hasilC=(y * 9/5)+32
+  print(float(hasilC))
 
